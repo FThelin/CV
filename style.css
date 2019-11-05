@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Itim|Raleway:200,300,400,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+    font-family: 'Raleway', sans-serif;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/***** Main section *****/
+main {
+    height: 100vh;
+    background-image: url('./img/bg.jpg');
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.top-container .inner-container {
+    width: 40rem;
+    height: 30rem;
+}
+
+.inner-container div {
+    height: 3px;
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    background-image: linear-gradient(left , black 2%, rgb(83, 0, 63) 50%, black 98%);
+    background-image: -o-linear-gradient(left , black 2%, rgb(83, 0, 63) 50%, black 98%);
+    background-image: -moz-linear-gradient(left , black 2%, rgb(83, 0, 63) 50%, black 98%);
+    background-image: -webkit-linear-gradient(left , black 2%, rgb(83, 0, 63) 50%, black 98%);
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, black), color-stop(0.5, rgb(83, 0, 63)), color-stop(0.98, black) );
+}
+
+.top-container {
+    height: 85vh;
+}
+
+.logo {
+    font-family: 'Itim', cursive;
+    font-size: 10rem;
+    color: rgb(190, 0, 143);
+    text-shadow: 0 0 4px rgb(190, 0, 143), 0 0 2px rgba(172, 114, 157, 0.897);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 4rem;
+    color: rgb(211, 211, 211);    
+    text-shadow: 0 0 6px rgba(189, 189, 189, 0.719);
+    margin-top: 2rem;
+}
+
+.top-container .title {
+    color: rgb(211, 211, 211);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.65rem;
+    text-indent: 0.65rem;
+}
+
+.bottom-container {
+    display: flex;
+    height: 15vh;
+}
+
+.nav-container {
+    width: 25%;
+    background-color: rgba(15, 15, 15, 0.363);
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.nav-container div {
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(37, 37, 37);
+    border-radius: 50%;
+}
+  
+.nav-container div:hover {
+    cursor: pointer;
+    color: rgb(221, 0, 166);
+    box-shadow: 0 0 5px rgba(177, 129, 165, 0.877), 0 0 25px rgba(255, 0, 191, 0.459);
+    text-shadow: 0 0 15px rgba(177, 129, 165, 0.877);
+  }
+
+.nav-container i {
+    font-size: 2rem;
+    color: rgb(211, 211, 211);
+}
+
+.nav-container p {
+    color: rgba(177, 129, 165, 0.877);
+    margin-top: 0.5rem;
+    letter-spacing: 0.3rem;
+    text-indent: 0.3rem;
+}
+
+/***** About section *****/
+section {
+    height: 100vh;
+}
+
