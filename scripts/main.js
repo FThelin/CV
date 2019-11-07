@@ -21,12 +21,12 @@ $(document).ready(() => {
 
     //Navbar hover effects
     $('.nav-container').mouseover(function() {
-        $(this).css('backgroundColor', 'rgb(22, 22, 22)');
+        $(this).css('backgroundColor', 'rgb(35, 35, 35)');
         $('div', this).css( 'boxShadow', '0 0 5px rgb(0, 157, 230), 0 0 25px rgb(0, 157, 230)');
     })
 
     $('.nav-container').mouseout(function() {
-        $(this).css('backgroundColor', 'rgb(10, 10, 10)');
+        $(this).css('backgroundColor', 'rgb(20, 20, 20)');
         $('div', this).css( 'boxShadow', 'none');
     })
 

@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(212, 212, 212);
     font-family: 'Raleway', sans-serif;
 }
 
@@ -27,7 +27,7 @@ body {
 /***** Main section *****/
 main {
     height: 100vh;
-    background-image: url('./img/bg.jpg');
+    background-image: url('../img/bg.jpg');
     background-position: bottom center;
     background-size: cover;
 }
@@ -39,13 +39,12 @@ main {
 
 .inner-container div {
     height: 3px;
-    background-color: rgb(17, 17, 17);
     width: 100%;
-    background-image: linear-gradient(left , black 2%, rgb(0, 157, 230)50%, black 98%);
-    background-image: -o-linear-gradient(left , black 2%, rgb(0, 157, 230) 50%, black 98%);
-    background-image: -moz-linear-gradient(left , black 2%, rgb(0, 157, 230) 50%, black 98%);
-    background-image: -webkit-linear-gradient(left , black 2%, rgb(0, 157, 230) 50%, black 98%);
-    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, black), color-stop(0.5, rgb(0, 157, 230)), color-stop(0.98, black) );
+    background-image: linear-gradient(left , rgb(31, 31, 31) 2%, rgb(0, 157, 230)50%, rgb(31, 31, 31) 98%);
+    background-image: -o-linear-gradient(left , rgb(31, 31, 31) 2%, rgb(0, 157, 230) 50%, rgb(31, 31, 31) 98%);
+    background-image: -moz-linear-gradient(left , rgb(31, 31, 31) 2%, rgb(0, 157, 230) 50%, rgb(31, 31, 31) 98%);
+    background-image: -webkit-linear-gradient(left , rgb(31, 31, 31) 2%, rgb(0, 157, 230) 50%, rgb(31, 31, 31) 98%);
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, rgb(31, 31, 31)), color-stop(0.5, rgb(0, 157, 230)), color-stop(0.98, rgb(31, 31, 31)) );
     animation: 2s extend ease-out;
 }
 
@@ -90,11 +89,12 @@ h1 {
     display: flex;
     height: 15vh;
     width: 100%;
+    box-shadow: 0 2px 8px rgb(20, 20, 20);;
 }
 
 .nav-container {
     width: 25%;
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(20, 20, 20);
 }
 
 .nav-container:hover {
@@ -130,8 +130,5 @@ h1 {
     color: rgb(0, 157, 230);
 }
 
-/***** About section *****/
-section {
-    height: 100vh;
-}
+
 
