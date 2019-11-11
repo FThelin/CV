@@ -1,5 +1,7 @@
 $(document).ready(() => {  
 
+    
+
     const writeAboutText = text => {
         $('.about-text p').animate({'opacity': 0}, 400, () => {
             $('.about-text p').text(text).animate({'opacity': 1}, 400);    
@@ -10,12 +12,16 @@ $(document).ready(() => {
         switch (position){
             case 0:
                 writeAboutText('Born and raised in Vadstena, Sweden!Born and raised in Vadstena, Sweden!');
+                $('video source').attr('src', 'video/19822.mp4');
+                $(".video video")[0].load();
                 break;
             case -500:
                 writeAboutText('Ekonomisk linje');
                 break;
             case -1000:
                 writeAboutText('Musikpedagog');
+                $('video source').attr('src', 'video/2007.mp4');
+                $(".video video")[0].load();
                 break;
             case -1500:
                 writeAboutText('Hamnen');
@@ -36,7 +42,7 @@ $(document).ready(() => {
             position += 500;  
             console.log(position)                  
             $('.running-man img').animate({
-                top: position
+                left: position
             },1000);
             changeAboutText();
         }
@@ -47,7 +53,7 @@ $(document).ready(() => {
             position -= 500;  
             console.log(position)                  
             $('.running-man img').animate({
-                top: position
+                left: position
             },1000);
             changeAboutText();
         }    
