@@ -9,7 +9,7 @@ $(document).ready(() => {
     const changeAboutText = () => {
         switch (position){
             case 0:
-                writeAboutText('Born and raised in Vadstena, Sweden!');
+                writeAboutText('Born and raised in Vadstena, Sweden!Born and raised in Vadstena, Sweden!');
                 break;
             case -500:
                 writeAboutText('Ekonomisk linje');
@@ -37,7 +37,7 @@ $(document).ready(() => {
             console.log(position)                  
             $('.running-man img').animate({
                 top: position
-            },'slow');
+            },1000);
             changeAboutText();
         }
     })
@@ -48,7 +48,7 @@ $(document).ready(() => {
             console.log(position)                  
             $('.running-man img').animate({
                 top: position
-            },'slow');
+            },1000);
             changeAboutText();
         }    
     })

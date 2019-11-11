@@ -1,14 +1,75 @@
 .about {
-    padding: 5rem;
-    background-color: rgb(221, 221, 221);
+    height: 100vh;
+    background-image: url(../img/aboutbg.jpg);
+    background-position: center center;
+    background-size: cover;
 }
 
+.marbles {
+    width: 1152px;
+    margin: 0 auto;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "s1 s2 s3 s4"
+    "s1 s2 s3 s4"
+    "s1 s2 s3 s4"
+    "img time text vid"
+    "img time text .";
+}
+
+.string1 {
+    grid-area: s1;
+}
+
+.string2 {
+    grid-area: s2;
+}
+
+.string3 {
+    grid-area: s3;
+}
+
+.string4 {
+    grid-area: s4;
+}
+
+.history {
+    grid-area: time;
+}
+
+.about-text {
+    text-align: center;
+    padding: 0.5rem;
+    width: 18rem;
+    height: 18rem;   
+    border-radius: 50%;
+    box-shadow: inset 0 8px 15px rgba(24, 182, 255, 0.603), 0 -4px 10px rgba(37, 165, 250, 0.5);
+    background: radial-gradient(circle at 6rem 6rem, rgb(0, 117, 184), #000);
+    color: rgb(71, 215, 255);
+    grid-area: text;
+}
+
+.profile-picture {
+    grid-area: img; 
+}
+
+.profile-picture img {
+    width: 18rem;
+    border-radius: 50%;
+    box-shadow: inset 0 8px 15px rgba(24, 182, 255, 0.603), 0 -4px 10px rgba(37, 165, 250, 0.5);       
+} 
+
 .running-man {
-    width: 18.75rem;
-    height: 25rem;
+    width: 18rem;
+    height: 18rem;
     overflow: hidden;
-    background-color: rgba(0, 34, 128, 0.616);
     position: relative;
+    border-radius: 50%;
+    box-shadow: inset 0 8px 15px rgba(24, 182, 255, 0.603), 0 -4px 10px rgba(37, 165, 250, 0.5);
+    background: radial-gradient(circle at 6rem 6rem, rgb(0, 117, 184), #000); 
 }
 
 .running-man img {
@@ -18,7 +79,7 @@
 .slide-up {
     width: 100%;
     height: 2rem;
-    background-color: rgba(88, 88, 88, 0.26);
+    background-color: rgba(123, 202, 248, 0.418);
     position: absolute;
     top: 0;
     left: 0;
@@ -27,18 +88,31 @@
 .slide-down {
     width: 100%;
     height: 2rem;
-    background-color: rgba(88, 88, 88, 0.26);
+    background-color: rgba(123, 202, 248, 0.418);
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-.about-text {
-    width: 40rem;
-    height: 25rem;
-    background-color: white;
+.slide-up:hover, .slide-down:hover {
+    cursor: pointer;
+    background-color: rgba(162, 207, 233, 0.582);
 }
 
-.about-text p {
-    opacity: 1;
+.video {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgba(0, 116, 184, 0.418);
+    box-shadow: inset 0 8px 15px rgba(24, 182, 255, 0.603), 0 -4px 10px rgba(37, 165, 250, 0.5);
+    grid-area: vid;
+    position: relative;
+    left: 9rem;
+    bottom: 5rem;   
+}
+
+video {    
+    width: 24rem;
+    height: 24rem;
 }
