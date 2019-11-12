@@ -89,7 +89,8 @@ h1 {
     display: flex;
     height: 15vh;
     width: 100%;
-    box-shadow: 0 2px 8px rgb(20, 20, 20);;
+    box-shadow: 0 2px 8px rgb(20, 20, 20);
+    z-index: 1;
 }
 
 .nav-container {

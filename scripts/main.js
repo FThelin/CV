@@ -1,7 +1,8 @@
 $(document).ready(() => {  
 
-
-    // Navbar goes on top and stays on top when scrolling
+    /**
+     * Navbar goes on top and stays on top when scrolling
+     */
     $(window).scroll(() => {
     if ($(window).scrollTop() >= $('.bottom-container').offset().top) {
         $('.bottom-container').css({
@@ -19,7 +20,9 @@ $(document).ready(() => {
     }
 });
 
-    //Navbar hover effects
+    /**
+     * Navbar hover effects
+     */
     $('.nav-container').mouseover(function() {
         $(this).css('backgroundColor', 'rgb(35, 35, 35)');
         $('div', this).css( 'boxShadow', '0 0 5px rgb(0, 157, 230), 0 0 25px rgb(0, 157, 230)');
@@ -29,11 +32,4 @@ $(document).ready(() => {
         $(this).css('backgroundColor', 'rgb(20, 20, 20)');
         $('div', this).css( 'boxShadow', 'none');
     })
-
-
-
-
-
-
-
 })

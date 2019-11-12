@@ -1,0 +1,65 @@
+.skills {
+    background-color: gray; 
+    padding: 1rem; 
+}
+
+.skills-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.skills-header h3 {
+    color: rgb(37, 37, 37);
+    font-weight: 300;
+    font-size: 4rem;
+    background-color: rgb(0, 157, 230);
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 4rem 0;
+}
+
+.skills-pillars {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skills-scale {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.skills-scale ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 88%;
+    background-color: rgb(53, 53, 53);
+}
+
+.skills-scale ul li {
+    width: 10%;
+    text-align: right;
+    color: rgb(0, 157, 230);
+    font-weight: bold;
+}
+
+.pillar {
+    margin-bottom: 1rem;    
+    display: flex;
+}
+
+.skills-label {
+    background-color: rgb(0, 157, 230);
+    width: 12%;
+    padding: 0.5rem;
+}
+
+.skills-level {
+    background: linear-gradient(to right, rgb(0, 91, 133) 90%, white 0);
+    width: 88%;
+    padding: 0.5rem;
+}
