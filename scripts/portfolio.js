@@ -1,13 +1,28 @@
 $(document).ready(() => {  
 
-    $('.project-mm-image').mouseover(() => {
-        $('.project-info').css('opacity', '1');
-        $('.overlay').css('opacity', '1');
-    })
+    let degree = 90;
 
-    $('.project-mm-image').mouseout(() => {
-        $('.project-info').css('opacity', '0');
-        $('.overlay').css('opacity', '0');
+    $('.outer-circle').click(() => {
+
+        
+        if (degree === 90){
+            $('.outer-circle').css('transform', `rotate(${degree}deg)`);
+            $('.outer-circle p').css('transform', `rotate(-${degree}deg)`);  
+            degree = 180;
+        } else if (degree === 180){
+            $('.outer-circle').css('transform', `rotate(${degree}deg)`);
+            $('.outer-circle p').css('transform', `rotate(-${degree}deg)`);   
+            degree = 270;
+        } else if (degree === 270){
+            $('.outer-circle').css('transform', `rotate(${degree}deg)`); 
+            $('.outer-circle p').css('transform', `rotate(-${degree}deg)`);  
+            degree = 0;
+        } else if (degree === 0){
+            $('.outer-circle').css('transform', `rotate(${degree}deg)`);
+            $('.outer-circle p').css('transform', `rotate(-${degree}deg)`);   
+            degree = 90;
+        }
+        
     })
 
 
