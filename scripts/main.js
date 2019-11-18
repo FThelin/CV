@@ -24,12 +24,12 @@ $(document).ready(() => {
      * Navbar hover effects
      */
     $('.nav-container').mouseover(function() {
-        $(this).css('backgroundColor', 'rgb(35, 35, 35)');
+        $(this).css('backgroundColor', 'rgb(71, 90, 107)');
         $('div', this).css( 'boxShadow', '0 0 5px rgb(0, 157, 230), 0 0 25px rgb(0, 157, 230)');
     })
 
     $('.nav-container').mouseout(function() {
-        $(this).css('backgroundColor', 'rgb(20, 20, 20)');
+        $(this).css('backgroundColor', 'rgb(31, 49, 68)');
         $('div', this).css( 'boxShadow', 'none');
     })
 })

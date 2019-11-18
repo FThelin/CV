@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Itim|Raleway:200,300,400,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(212, 212, 212);
+    font-family: 'Raleway', sans-serif;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/***** Main section *****/
+main {
+    height: 100vh;
+    background-color: rgb(0, 22, 43);
+    background-image: url(/img/bg2.png);
+    background-size: cover;
+}
+
+.top-container .inner-container {
+    width: 40rem;
+    height: 30rem;
+}
+
+.inner-container div {
+    height: 3px;
+    width: 100%;
+    background-image: linear-gradient(left , rgb(0, 22, 43) 2%, rgb(0, 157, 230)50%, rgb(0, 22, 43) 98%);
+    background-image: -o-linear-gradient(left , rgb(0, 22, 43) 2%, rgb(0, 157, 230) 50%, rgb(0, 22, 43) 98%);
+    background-image: -moz-linear-gradient(left , rgb(0, 22, 43) 2%, rgb(0, 157, 230) 50%, rgb(0, 22, 43) 98%);
+    background-image: -webkit-linear-gradient(left , rgb(0, 22, 43) 2%, rgb(0, 157, 230) 50%, rgb(0, 22, 43) 98%);
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, rgb(0, 22, 43)), color-stop(0.5, rgb(0, 157, 230)), color-stop(0.98, rgb(0, 22, 43)) );
+    animation: 2s extend ease-out;
+}
+
+@keyframes extend {
+    from {
+        width: 0;
+    } 
+    to {
+        width: 100%;
+    }    
+}
+
+.top-container {
+    height: 85vh;
+}
+
+.logo {
+    font-family: 'Itim', cursive;
+    font-size: 12rem;
+    color: rgb(0, 157, 230);
+    text-shadow: 0 0 4px rgb(0, 110, 161);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 4rem;
+    color: rgb(211, 211, 211);    
+    text-shadow: 0 0 6px rgba(189, 189, 189, 0.719);
+    margin-top: 2rem;
+}  
+
+.top-container .title {
+    color: rgb(211, 211, 211);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.65rem;
+    text-indent: 0.65rem; 
+}
+
+.bottom-container {
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    box-shadow: 0 2px 8px rgb(0, 22, 43);
+    z-index: 2;
+}
+
+.nav-container {
+    width: 25%;
+    background-color: rgb(31, 49, 68);
+}
+
+.nav-container:hover {
+    cursor: pointer;
+}
+
+.nav-container div {
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(11, 43, 73);
+    border-radius: 50%;
+    transition: 150ms box-shadow ease-in;
+}
+  
+.nav-container div:hover {
+    cursor: pointer;
+  }
+
+.nav-container i {
+    font-size: 2rem;
+    color: rgb(0, 157, 230);
+}
+
+.nav-container p {
+    color: rgb(147, 174, 187);
+    margin-top: 0.5rem;
+    letter-spacing: 0.3rem;
+    text-indent: 0.3rem;
+}
+
+.nav-container span {
+    color: rgb(0, 157, 230);
+}
+
+footer {
+    min-height: 10rem;
+    background-color: rgb(37, 37, 37); 
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer a, footer p {
+    color: grey;
+    font-weight: bold;
+    font-size: 0.9rem; 
+}
+
+
