@@ -184,7 +184,7 @@
         padding: 1%;
         grid-gap: 1%;
         grid-template-columns: 1fr;
-        grid-template-rows: 30% 30% auto 25%;
+        grid-template-rows: 30% 30% 12% 25%;
         grid-template-areas: 
         "img"
         "text"
