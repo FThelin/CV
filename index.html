@@ -18,7 +18,7 @@
 </head>
 <body>
 
-    <!-- Main -->
+    <!-- Landing Page -->
     <main>
         <div class="top-container center">
             <div class="inner-container flex-column">
@@ -31,43 +31,54 @@
         
         <!-- Bottom container/Navbar -->    
         <div class="bottom-container">
-            <div class="nav-container flex-column">
-                <div class="center">
-                    <i class="fas fa-hands"></i>
-                </div> 
-                    <p>About <span>></span></p>                               
+            
+                <div class="nav-container center">
+                    <a href="#about" class="flex-column">
+                        <div class="center">
+                            <i class="fas fa-hands"></i>
+                        </div> 
+                        <p>About <span>></span></p>
+                   </a>                             
+                </div>
+            
+
+            <div class="nav-container center">
+                <a href="#portfolio" class="flex-column">
+                    <div class="center">
+                        <i class="fas fa-folder"></i>
+                    </div> 
+                    <p>Portfolio <span>></span></p>
+                </a>              
             </div>
 
-            <div class="nav-container flex-column">
-                <div class="center">
-                    <i class="fas fa-folder"></i>
-                </div> 
-                    <p>Portfolio <span>></span></p>              
+            <div class="nav-container center">
+                <a href="#skills" class="flex-column">
+                    <div class="center">
+                        <i class="fas fa-chart-bar"></i>
+                    </div> 
+                    <p>Skills <span>></span></p>
+                </a>      
             </div>
 
-            <div class="nav-container flex-column">
-                <div class="center">
-                    <i class="fas fa-chart-bar"></i>
-                </div> 
-                    <p>Skills <span>></span></p>               
-            </div>
-
-            <div class="nav-container flex-column">
-                <div class="center">
-                    <i class="fas fa-link"></i>
-                </div> 
-                    <p>Connect <span>></span></p>             
+            <div class="nav-container center">
+                <a href="#connect" class="flex-column">
+                    <div class="center">
+                        <i class="fas fa-link"></i>
+                    </div> 
+                    <p>Connect <span>></span></p> 
+                </a>            
             </div>
         </div>    
     </main>
 
     <!-- About section -->
     <section class="about">
+        <a name="about"></a>
         <div class="header">
-            <h3>ABOUT</h3>
-                      
+            <h3 name="about">ABOUT</h3>                      
         </div> 
         
+        <!-- Text section in about -->
         <div class="content">
             <div class="left-box center"> 
                  <div class="about-text">
@@ -80,6 +91,7 @@
                 <div class="text-label">text</div>
             </div>
 
+            <!-- The timeline -->
             <div class="right-box center">
                 <div class="top-box center">
                     <p class="slide-left"><</p>
@@ -91,6 +103,7 @@
                     <p class="slide-right">></p>
                 </div>                    
                 
+                <!-- Video -->
                 <div class="bottom-box center">
                     <div class="video center">
                         <video autoplay loop muted playsinline>
@@ -107,14 +120,16 @@
     </section>
 
     <!-- Portfolio -->
+    <a name="portfolio"></a>
     <section class="portfolio">
-
+        
         <div class="portfolio-header center">
             <h3>PORTFOLIO</h3>
         </div>
         
         <div class="hud center">
 
+            <!-- Image of the sci-fi hud interface framing this section -->
             <picture style="width: 100%;">
                 <source media="(min-width: 888px)" srcset="img/hud.jpg">                        
                 <img src="img/hudsmallscreen2.jpg" class="hud-image" style="width: 100%;">
@@ -123,16 +138,22 @@
             <div class="turning-knob"></div> 
 
             <div class="interface">
+                <!-- Text in the portfolio section -->
                 <div class="project-text interface-box">
                     <p>This is a school project I did when studying Javascript. Mansion Murder is a text-based game using commands in order to progress. <br><br> Can you figure out the puzzles and mini-games in order to find the murderer?</p>                    
                 </div>
+                <!-- Image of the project -->
                 <div class="project-image center interface-box">
                     <img src="img/mansionmurder.JPG" alt="">
                 </div>
+                
+                <!-- Links to website and github -->
                 <div class="project-links center">
                     <a href="https://fthelin.github.io/" target="_blank"><div class="interface-box center">To Website</div></a>
                     <a href="https://github.com/FThelin/FThelin.github.io" target="_blank"><div class="interface-box center">Github Repo</div></a>
                 </div>
+
+                <!-- Project list -->
                 <div class="project-tabs interface-box center">
                     <ul class="center">
                         <li class="selected">Mansion Murder</li>
@@ -148,7 +169,7 @@
 
     <!-- Skills section -->
     <section class="skills">        
-
+        <a name="skills"></a>
         <div class="skills-header">
             <h3>SKILLS</h3>
         </div>
@@ -238,17 +259,15 @@
         <p class="center">Last updated: 2019/11/13</p>
     </section>
 
+    <!-- Footer/Connect section -->
     <footer class="center">
+        <a name="connect"></a>
         <div>
             <a href="mailto:fredrikthelin82@gmail.com">email: fredrikthelin82@gmail.com</a>
             <p>&copy 2019 Fredrik Thelin</p>
             <a href="http://www.linkedin.com/in/fredrik-thelin-66bbb1171" target="_blank">Linked In profile</a>
-        </div>
-        
-    </footer>
-
-
-   
+        </div>        
+    </footer>  
     
 </body>
 </html>

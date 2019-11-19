@@ -112,7 +112,12 @@ h1 {
   
 .nav-container div:hover {
     cursor: pointer;
-  }
+}
+
+.nav-container a {
+    color: rgb(147, 174, 187);
+    text-decoration: none;
+}
 
 .nav-container i {
     font-size: 2rem;
@@ -156,7 +161,7 @@ footer a, footer p {
     }
 
     h1 {
-        font-size: 10vw;
+        font-size: 9vw;
     }  
 
     .top-container .title {

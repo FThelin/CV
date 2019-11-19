@@ -16,7 +16,7 @@ $(document).ready(() => {
             width: '2.5rem'
         },'slow')
         $('.nav-container i').animate({fontSize: '1.2rem'},'slow');
-        $('.nav-container').css('flex-direction', 'row');
+        $('.nav-container a').css('flex-direction', 'row');
     }
 });
 

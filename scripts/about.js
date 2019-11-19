@@ -90,11 +90,4 @@ $(document).ready(() => {
             changeAboutText();
         }    
     })
-
-
-
-
-
-
-
 })
