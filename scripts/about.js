@@ -1,5 +1,4 @@
-$(document).ready(() => {      
- 
+$(document).ready(() => {     
 
     /**
      * Change text depending on year selected

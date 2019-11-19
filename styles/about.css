@@ -1,5 +1,5 @@
 .about {
-    background-image: url('/img/aboutbg.jpg');
+    background-image: url('../img/aboutbg.jpg');
     background-size: cover;
     background-position: center center;
 }
