@@ -131,7 +131,7 @@ h1 {
 }
 
 footer {
-    min-height: 10rem;
+    height: 10rem;
     background-color: rgb(37, 37, 37); 
 }
 
@@ -146,6 +146,51 @@ footer a, footer p {
     color: grey;
     font-weight: bold;
     font-size: 0.9rem; 
+}
+
+@media screen and (max-width: 700px){    
+
+    .top-container .inner-container {
+        width: 80%;
+        height: 30rem;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }  
+
+    .top-container .title {
+        font-size: 3vw;
+    }
+
+    .nav-container p {
+        display: none;
+    }
+
+    .nav-container div {
+        height: 10vw;
+        width: 10vw;
+    }
+
+    .nav-container i {
+        font-size: 6vw;
+    }
+    
+    footer div{
+        flex-direction: column;
+        align-content: space-evenly;
+        height: 60%;
+    }
+
+
+}
+
+@media screen and (max-width: 410px){
+
+    .top-container .title {
+        letter-spacing: 0.25rem;
+        text-indent: 0.25rem; 
+    }
 }
 
 

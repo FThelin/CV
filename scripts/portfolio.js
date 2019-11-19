@@ -1,5 +1,5 @@
-$(document).ready(() => {  
-
+$(document).ready(() => {      
+    
     let degree = 90;
 
     /**
@@ -15,7 +15,7 @@ $(document).ready(() => {
             changeClassOnTabs('2', '1');
             showStaticGif();
             waitForNewProjectImage('../img/mwct.jpg');
-            displayProjectText('Another school project where we had to found an old ugly website and modernize it. Me and my partner found a company that worked with web design. <br><br> Their site was from 1995 and link to the old website is found inside the modern site.');                                                        
+            displayProjectText('School project where we had to found an old website and modernize it. We found a company that worked with web design. <br><br> Their site was from 1995 and link to the old website is found inside the modern site.');                                                        
             changeLinkDestination('https://fthelin.github.io/MidwestCompTech/', 'https://github.com/FThelin/MidwestCompTech');
             degree = 180;
         } else if (degree === 180){
@@ -99,5 +99,5 @@ $(document).ready(() => {
     const changeLinkDestination = (website, github) => {
         $(`.project-links a:nth-child(1)`).attr('href', `${website}`);
         $(`.project-links a:nth-child(2)`).attr('href', `${github}`);
-    }
+    }    
 })
