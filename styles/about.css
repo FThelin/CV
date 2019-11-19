@@ -132,11 +132,12 @@
     overflow: hidden;
     background-color: rgba(0, 116, 184, 0.418);
     box-shadow: inset 0 8px 15px rgba(24, 182, 255, 0.603), 0 -4px 10px rgba(37, 165, 250, 0.5);
+    position: relative;
 }
 
 video {    
     width: 20rem;
-    height: 20rem;
+    height: 20rem;    
 }
 
 /***** MEDIA QUERIES *****/

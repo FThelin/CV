@@ -177,9 +177,9 @@
     }
 
     .interface {
-        left: 36%;
+        left: 31%;
         top: 24.9%;
-        width: 41.2%;
+        width: 53.5%;
         height: 53.5%;
         padding: 1%;
         grid-gap: 1%;
@@ -197,11 +197,11 @@
     }
 
     .project-text p {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     .project-links a{        
-        font-size: 2vw;
+        font-size: 2.5vw;
         height: 80%;
         width: 80%; 
     }
@@ -217,7 +217,7 @@
     }
 
     .project-tabs ul li {
-        font-size: 2vw;        
+        font-size: 2.5vw;        
         margin-bottom: 0.3rem;        
     }
     
@@ -226,13 +226,13 @@
     } 
     
     .project-tabs ul .selected { 
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
 
     .turning-knob {
-        width: 14.5%;
-        height: 9.5%;
-        left: 16%;
+        width: 20%;
+        height: 10%;
+        left: 5%;
         top: 20%;
     }
 }
