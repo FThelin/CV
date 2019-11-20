@@ -184,6 +184,7 @@ footer a, footer p {
     footer div{
         flex-direction: column;
         align-content: space-evenly;
+        align-items: center;
         height: 60%;
     }
 

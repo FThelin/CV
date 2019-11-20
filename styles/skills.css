@@ -49,7 +49,6 @@
 
 .skills-scale {
     display: flex;
-    justify-content: flex-end;
 }
 
 .skills-scale ul {
@@ -77,9 +76,10 @@
 .skills-label {
     background-color: rgb(49, 49, 49);
     color: lightgrey;
-    width: 12%;
+    width: 6rem;
     padding: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    flex-shrink: 0;
 }
 
 .skills-level {      
@@ -92,11 +92,19 @@
     margin-bottom: 2rem;
 }
 
+.block-box {
+    background-color: rgba(0, 0, 0, 0);
+}
+
 /***** MEDIA QUERIES *****/
 @media screen and (max-width: 1072px){
 
     .skills {
         padding: 1rem 0;
+    }
+
+    .skills-pillars {
+        width: 95%;
     }
 
     .skills-scale ul li {
@@ -107,9 +115,7 @@
         font-size: 6vw;
     }
 
-    .skills-label {      
-        font-size: 1.2vw;
+    .skills-label {
         height: 1.3rem;
     } 
-       
-}  
+} 
