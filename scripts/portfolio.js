@@ -1,5 +1,9 @@
 $(document).ready(() => {      
     
+    /**
+     * Degrees to turn the knob
+     * @type {Number}
+     */
     let degree = 90;
 
     /**

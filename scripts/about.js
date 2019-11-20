@@ -66,6 +66,10 @@ $(document).ready(() => {
         $(".video video")[0].load();
     }
 
+    /**
+     * Position left on the relative positioned image. 
+     * @type {Number}
+     */
     let position = 0;
 
     /**
