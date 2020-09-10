@@ -1,275 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <link rel="stylesheet" href="./styles/skills.css">
-    <link rel="stylesheet" href="./styles/portfolio.css">
-    <script src="https://kit.fontawesome.com/8bcd668c2a.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
+    <link rel="stylesheet" href="./styles/portfolio.css" />
+    <script
+      src="https://kit.fontawesome.com/8bcd668c2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
     <script src="./scripts/main.js" defer></script>
     <script src="./scripts/about.js" defer></script>
     <script src="./scripts/skills.js" defer></script>
     <script src="./scripts/portfolio.js" defer></script>
     <title>Fredrik Thelin | Front-End Developer</title>
-</head>
-<body>
-
+    <!-- Hotjar Tracking Code for https://fthelin.github.io/CV/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 1984817, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
     <!-- Landing Page -->
     <main>
-        <div class="top-container center">
-            <div class="inner-container flex-column">
-                <p class="logo">ft</p>
-                <div></div>            
-                <h1>Fredrik Thelin</h1>            
-                <p class="title">Front-End Developer</p>
-            </div>
+      <div class="top-container center">
+        <div class="inner-container flex-column">
+          <p class="logo">ft</p>
+          <div></div>
+          <h1>Fredrik Thelin</h1>
+          <p class="title">Front-End Developer</p>
         </div>
-        
-        <!-- Bottom container/Navbar -->    
-        <div class="bottom-container">
-            
-                <div class="nav-container center">
-                    <a href="#about" class="flex-column">
-                        <div class="center">
-                            <i class="fas fa-hands"></i>
-                        </div> 
-                        <p>About <span>></span></p>
-                   </a>                             
-                </div>
-            
+      </div>
 
-            <div class="nav-container center">
-                <a href="#portfolio" class="flex-column">
-                    <div class="center">
-                        <i class="fas fa-folder"></i>
-                    </div> 
-                    <p>Portfolio <span>></span></p>
-                </a>              
+      <!-- Bottom container/Navbar -->
+      <div class="bottom-container">
+        <div class="nav-container center">
+          <a href="#about" class="flex-column">
+            <div class="center">
+              <i class="fas fa-hands"></i>
             </div>
+            <p>About <span>></span></p>
+          </a>
+        </div>
 
-            <div class="nav-container center">
-                <a href="#skills" class="flex-column">
-                    <div class="center">
-                        <i class="fas fa-chart-bar"></i>
-                    </div> 
-                    <p>Skills <span>></span></p>
-                </a>      
+        <div class="nav-container center">
+          <a href="#portfolio" class="flex-column">
+            <div class="center">
+              <i class="fas fa-folder"></i>
             </div>
+            <p>Portfolio <span>></span></p>
+          </a>
+        </div>
 
-            <div class="nav-container center">
-                <a href="#connect" class="flex-column">
-                    <div class="center">
-                        <i class="fas fa-link"></i>
-                    </div> 
-                    <p>Connect <span>></span></p> 
-                </a>            
+        <div class="nav-container center">
+          <a href="#skills" class="flex-column">
+            <div class="center">
+              <i class="fas fa-chart-bar"></i>
             </div>
-        </div>    
+            <p>Skills <span>></span></p>
+          </a>
+        </div>
+
+        <div class="nav-container center">
+          <a href="#connect" class="flex-column">
+            <div class="center">
+              <i class="fas fa-link"></i>
+            </div>
+            <p>Connect <span>></span></p>
+          </a>
+        </div>
+      </div>
     </main>
 
     <!-- About section -->
     <section class="about">
-        <a name="about"></a>
-        <div class="header">
-            <h3 name="about">ABOUT</h3>                      
-        </div> 
-        
-        <!-- Text section in about -->
-        <div class="content">
-            <div class="left-box center"> 
-                 <div class="about-text">
-                    <h2>Early years</h2>
-                    <br>                    
-                    <p>Born and raised in Vadstena, Sweden! I developed my interest in music very early and a desire 
-                        to create stuff has followed me my whole life. I loved to write songs on my Amiga 500 computer 
-                        using a program called "FastTracker".</p>
-                </div>
-                <div class="text-label">text</div>
+      <a name="about"></a>
+      <div class="header">
+        <h3 name="about">ABOUT</h3>
+      </div>
+
+      <!-- Text section in about -->
+      <div class="content">
+        <div class="left-box center">
+          <div class="about-text">
+            <h2>Early years</h2>
+            <br />
+            <p>
+              Born and raised in Vadstena, Sweden! I developed my interest in
+              music very early and a desire to create stuff has followed me my
+              whole life. I loved to write songs on my Amiga 500 computer using
+              a program called "FastTracker".
+            </p>
+          </div>
+          <div class="text-label">text</div>
+        </div>
+
+        <!-- The timeline -->
+        <div class="right-box center">
+          <div class="top-box center">
+            <p class="slide-left"><</p>
+
+            <div class="running-man">
+              <img src="img/timeline2.png" alt="" />
             </div>
 
-            <!-- The timeline -->
-            <div class="right-box center">
-                <div class="top-box center">
-                    <p class="slide-left"><</p>
-        
-                    <div class="running-man">
-                        <img src="img/timeline2.png" alt="">                        
-                    </div> 
+            <p class="slide-right">></p>
+          </div>
 
-                    <p class="slide-right">></p>
-                </div>                    
-                
-                <!-- Video -->
-                <div class="bottom-box center">
-                    <div class="video center">
-                        <video autoplay loop muted playsinline>
-                            <source src="video/19822.mp4" type="video/mp4">
-                            Your browser does not support HTML5 video.
-                        </video>
-                    </div> 
-                </div>
-
-                <div class="time-label">time</div>
-                <div class="video-label">video</div>
+          <!-- Video -->
+          <div class="bottom-box center">
+            <div class="video center">
+              <video autoplay loop muted playsinline>
+                <source src="video/19822.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+              </video>
             </div>
-        </div>     
+          </div>
+
+          <div class="time-label">time</div>
+          <div class="video-label">video</div>
+        </div>
+      </div>
     </section>
 
     <!-- Portfolio -->
     <a name="portfolio"></a>
     <section class="portfolio">
-        
-        <div class="portfolio-header center">
-            <h3>PORTFOLIO</h3>
+      <div class="portfolio-header center">
+        <h3>PORTFOLIO</h3>
+      </div>
+
+      <div class="hud center">
+        <!-- Image of the sci-fi hud interface framing this section -->
+        <picture style="width: 100%">
+          <source media="(min-width: 888px)" srcset="img/hud.jpg" />
+          <img
+            src="img/hudsmallscreen2.jpg"
+            class="hud-image"
+            style="width: 100%"
+          />
+        </picture>
+
+        <div class="turning-knob"></div>
+
+        <div class="interface">
+          <!-- Text in the portfolio section -->
+          <div class="project-text interface-box">
+            <p>
+              This is a school project I did when studying Javascript. Mansion
+              Murder is a text-based game using commands in order to progress.
+              <br /><br />
+              Can you figure out the puzzles and mini-games in order to find the
+              murderer?
+            </p>
+          </div>
+          <!-- Image of the project -->
+          <div class="project-image center interface-box">
+            <img src="img/mansionmurder.JPG" alt="" />
+          </div>
+
+          <!-- Links to website and github -->
+          <div class="project-links center">
+            <a href="https://fthelin.github.io/" target="_blank"
+              ><div class="interface-box center">To Website</div></a
+            >
+            <a
+              href="https://github.com/FThelin/FThelin.github.io"
+              target="_blank"
+              ><div class="interface-box center">Github Repo</div></a
+            >
+          </div>
+
+          <!-- Project list -->
+          <div class="project-tabs interface-box center">
+            <ul class="center">
+              <li class="selected">Mansion Murder</li>
+              <li>Midwest computer</li>
+              <li>Tele2</li>
+              <li>Guess Who?</li>
+            </ul>
+          </div>
         </div>
-        
-        <div class="hud center">
-
-            <!-- Image of the sci-fi hud interface framing this section -->
-            <picture style="width: 100%;">
-                <source media="(min-width: 888px)" srcset="img/hud.jpg">                        
-                <img src="img/hudsmallscreen2.jpg" class="hud-image" style="width: 100%;">
-            </picture>
-
-            <div class="turning-knob"></div> 
-
-            <div class="interface">
-                <!-- Text in the portfolio section -->
-                <div class="project-text interface-box">
-                    <p>This is a school project I did when studying Javascript. Mansion Murder is a text-based game using commands in order to progress. <br><br> Can you figure out the puzzles and mini-games in order to find the murderer?</p>                    
-                </div>
-                <!-- Image of the project -->
-                <div class="project-image center interface-box">
-                    <img src="img/mansionmurder.JPG" alt="">
-                </div>
-                
-                <!-- Links to website and github -->
-                <div class="project-links center">
-                    <a href="https://fthelin.github.io/" target="_blank"><div class="interface-box center">To Website</div></a>
-                    <a href="https://github.com/FThelin/FThelin.github.io" target="_blank"><div class="interface-box center">Github Repo</div></a>
-                </div>
-
-                <!-- Project list -->
-                <div class="project-tabs interface-box center">
-                    <ul class="center">
-                        <li class="selected">Mansion Murder</li>
-                        <li>Midwest computer</li>
-                        <li>Tele2</li>
-                        <li>Guess Who?</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
+      </div>
     </section>
 
     <!-- Skills section -->
-    <section class="skills">        
-        <a name="skills"></a>
-        <div class="skills-header">
-            <h3>SKILLS</h3>
+    <section class="skills">
+      <a name="skills"></a>
+      <div class="skills-header">
+        <h3>SKILLS</h3>
+      </div>
+
+      <div class="color-explanation">
+        <div class="current center">Current</div>
+        <div class="goal center">Goal</div>
+      </div>
+
+      <div class="skills-pillars">
+        <div class="skills-scale">
+          <div class="skills-label center block-box"></div>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+          </ul>
         </div>
 
-        <div class="color-explanation">
-            <div class="current center">Current</div>
-            <div class="goal center">Goal</div>
-        </div>        
-        
-        <div class="skills-pillars">
-            
-            <div class="skills-scale">
-                <div class="skills-label center block-box"></div>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-                </ul>
-            </div>
-            
-            <div class="pillar">
-                <div class="skills-label center">HTML</div>
-                <div class="skills-level html"></div>
-            </div>
-
-            <div class="pillar">
-                <div class="skills-label center">CSS</div>
-                <div class="skills-level css"></div>
-            </div>
-
-            <div class="pillar">
-                <div class="skills-label center">JAVASCRIPT</div>
-                <div class="skills-level js"></div>
-            </div>
-
-            <div class="pillar">
-                <div class="skills-label center">JQUERY</div>
-                <div class="skills-level jq"></div>
-            </div>
-
-            <div class="pillar">
-                <div class="skills-label center">REACT</div>
-                <div class="skills-level react"></div>
-            </div>
-
-            <div class="pillar">
-                <div class="skills-label center">BACK-END</div>
-                <div class="skills-level be"></div>
-            </div>
-
-            <div class="pillar">
-                <div class="skills-label center">TYPESCRIPT</div>
-                <div class="skills-level ts"></div>
-            </div>
-
-            <div class="pillar">
-                <div class="skills-label center">P5</div>
-                <div class="skills-level p5"></div>
-            </div>
-
-            <div class="pillar">
-                <div class="skills-label center">FLOORBALL</div>
-                <div class="skills-level fb"></div>
-            </div>
-
-            <div class="pillar">
-                <div class="skills-label center">GUITAR</div>
-                <div class="skills-level gu"></div>
-            </div>
-
-            <div class="pillar">
-                <div class="skills-label center">PIANO</div>
-                <div class="skills-level pi"></div>
-            </div>
-
-            <div class="pillar">
-                <div class="skills-label center">RUBIKS-CUBE</div>
-                <div class="skills-level rc"></div>
-            </div>            
+        <div class="pillar">
+          <div class="skills-label center">HTML</div>
+          <div class="skills-level html"></div>
         </div>
 
-        <p class="center">Last updated: 2019/11/13</p>
+        <div class="pillar">
+          <div class="skills-label center">CSS</div>
+          <div class="skills-level css"></div>
+        </div>
+
+        <div class="pillar">
+          <div class="skills-label center">JAVASCRIPT</div>
+          <div class="skills-level js"></div>
+        </div>
+
+        <div class="pillar">
+          <div class="skills-label center">JQUERY</div>
+          <div class="skills-level jq"></div>
+        </div>
+
+        <div class="pillar">
+          <div class="skills-label center">REACT</div>
+          <div class="skills-level react"></div>
+        </div>
+
+        <div class="pillar">
+          <div class="skills-label center">BACK-END</div>
+          <div class="skills-level be"></div>
+        </div>
+
+        <div class="pillar">
+          <div class="skills-label center">TYPESCRIPT</div>
+          <div class="skills-level ts"></div>
+        </div>
+
+        <div class="pillar">
+          <div class="skills-label center">P5</div>
+          <div class="skills-level p5"></div>
+        </div>
+
+        <div class="pillar">
+          <div class="skills-label center">FLOORBALL</div>
+          <div class="skills-level fb"></div>
+        </div>
+
+        <div class="pillar">
+          <div class="skills-label center">GUITAR</div>
+          <div class="skills-level gu"></div>
+        </div>
+
+        <div class="pillar">
+          <div class="skills-label center">PIANO</div>
+          <div class="skills-level pi"></div>
+        </div>
+
+        <div class="pillar">
+          <div class="skills-label center">RUBIKS-CUBE</div>
+          <div class="skills-level rc"></div>
+        </div>
+      </div>
+
+      <p class="center">Last updated: 2019/11/13</p>
     </section>
 
     <!-- Footer/Connect section -->
     <footer class="center">
-        <a name="connect"></a>
-        <div>
-            <a href="mailto:fredrikthelin82@gmail.com">email: fredrikthelin82@gmail.com</a>
-            <p>&copy 2019 Fredrik Thelin</p>
-            <a href="http://www.linkedin.com/in/fredrik-thelin-66bbb1171" target="_blank">LinkedIn profile</a>
-        </div>        
-    </footer>  
-    
-</body>
+      <a name="connect"></a>
+      <div>
+        <a href="mailto:fredrikthelin82@gmail.com"
+          >email: fredrikthelin82@gmail.com</a
+        >
+        <p>&copy 2019 Fredrik Thelin</p>
+        <a
+          href="http://www.linkedin.com/in/fredrik-thelin-66bbb1171"
+          target="_blank"
+          >LinkedIn profile</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
